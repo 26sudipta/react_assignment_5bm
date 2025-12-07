@@ -56,10 +56,10 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 flex items-center justify-center px-4 py-12">
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl p-8 sm:p-10">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 flex items-center justify-center px-4 py-16">
+      <div className="w-full max-w-md bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-8 sm:p-10 border border-white/50">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">
+          <h1 className="text-4xl font-black text-gray-900 mb-2 gradient-text">
             Welcome Back
           </h1>
           <p className="text-gray-600">Sign in to your ShopHub account</p>
@@ -82,7 +82,7 @@ export default function Login() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+              className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
               placeholder="you@example.com"
             />
           </div>
@@ -96,7 +96,7 @@ export default function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+              className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
               placeholder="Enter your password"
             />
           </div>
@@ -104,7 +104,7 @@ export default function Login() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 disabled:from-gray-400 disabled:to-gray-500 text-white font-bold py-3 px-4 rounded-lg transition duration-300 text-lg"
+            className="w-full btn-primary disabled:opacity-60"
           >
             {loading ? 'Signing in...' : 'Sign In'}
           </button>
@@ -123,7 +123,7 @@ export default function Login() {
           <button
             onClick={handleGoogleLogin}
             disabled={loading}
-            className="w-full border-2 border-gray-300 rounded-lg py-3 px-4 flex items-center justify-center gap-3 hover:bg-gray-50 transition duration-300 disabled:opacity-50 font-semibold"
+            className="w-full border-2 border-gray-200 rounded-xl py-3 px-4 flex items-center justify-center gap-3 hover:bg-gray-50 transition duration-300 disabled:opacity-50 font-semibold"
           >
             <FcGoogle size={24} />
             <span className="text-gray-700">Google</span>
@@ -132,7 +132,7 @@ export default function Login() {
           <button
             onClick={handleGitHubLogin}
             disabled={loading}
-            className="w-full border-2 border-gray-300 rounded-lg py-3 px-4 flex items-center justify-center gap-3 hover:bg-gray-50 transition duration-300 disabled:opacity-50 font-semibold"
+            className="w-full border-2 border-gray-200 rounded-xl py-3 px-4 flex items-center justify-center gap-3 hover:bg-gray-50 transition duration-300 disabled:opacity-50 font-semibold"
           >
             <FiGithub size={24} className="text-gray-900" />
             <span className="text-gray-700">GitHub</span>
