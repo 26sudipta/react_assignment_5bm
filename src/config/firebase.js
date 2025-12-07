@@ -3,14 +3,13 @@ import { getAuth, GoogleAuthProvider, GithubAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 // Your Firebase configuration
-// Replace these values with your actual Firebase config
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCvxAHbRFcW6K5QC0UhOud5a_FNiK4nTDQ",
+  authDomain: "react-assignment-3-d89d3.firebaseapp.com",
+  projectId: "react-assignment-3-d89d3",
+  storageBucket: "react-assignment-3-d89d3.firebasestorage.app",
+  messagingSenderId: "160482100186",
+  appId: "1:160482100186:web:6053b670769da59cea76e3"
 };
 
 // Initialize Firebase
